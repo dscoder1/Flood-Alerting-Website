@@ -1,0 +1,97 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "bLtoSwhiCrwAZDyjo",
+      });
+    })();
+  </script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav >
+        <h1 id="HeadTitle">Flood Alert</h1>
+        <ul>
+            <li><a href="#home" id="home-link">Home</a></li>
+            <li><a href="#about" id="about-link">About</a></li>
+            <li><a href="./MainFunction.html" >Services</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <section id="home">
+
+   
+  <div class="images">
+    <div class="mySlide">
+        <img class="mySlides" src="First.jpg" alt="First Image">
+        <div class="text">Flood Alert System</div>
+    </div>
+    <div class="mySlide">
+        <img class="mySlides" src="Second.jpg" alt="Second Image">
+    </div>
+    <div class="mySlide">
+      <img class="mySlides" src="Third.jpg" alt="Third Image">
+  </div>
+</div>
+
+  
+ 
+    </section>
+
+    <section id="about">
+        <h1 id="aboutTitle">About Our Project</h1>
+        <div class="about-page">
+          <h1 class="floodAlert">About Flood Alert System</h1>
+          <p class="floodAlertDetails">The Flood Alerting System is an innovative solution designed to help communities prepare for and respond to flooding events.</p>
+          
+          <h2 class="floodAlert">Why It Matters</h2>
+          <p class="floodAlertDetails">Our project is a step toward creating a safer, more connected environment in flood-prone areas, using technology to make real-time communication and resource access easier than ever before.</p>
+          
+          <button id="factButton">Click To See Features</button>
+          <div id="facts" class="facts"></div>
+      </div>
+
+        
+    </section>
+    
+
+    <section id="contact">
+      <h1 id="ContactUs">Contact Us</h1>
+
+      <div class="contact-container">
+        <form id="contact-form" action="#" method="POST">
+            <label for="Contactname">Name:</label>
+            <input type="text" id="Contactname" name="Contactname" required>
+
+            <label for="Contactemail">Email:</label>
+            <input type="email" id="Contactemail" name="Contactemail" required>
+
+            <label for="message">Message:</label>
+            <textarea id="Contactmessage" name="Contactmessage" required></textarea>
+
+            <button id="submitBtn" type="submit" onclick="sendContactMail()">Send Message</button>
+        </form>
+        <div id="response-message"></div>
+    </div>
+  </section>
+ 
+   
+
+
+    <script src="index.js"></script>
+</body>
+</html>
